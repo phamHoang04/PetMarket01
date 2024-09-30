@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Success Message -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUCCESS!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"/>
+
+    <!-- Logo Image -->
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Pet Market Logo"
+        android:layout_gravity="center"/>
+
+    <!-- Success Description -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your order will be delivered soon."
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank you for choosing our app!"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Track Order Button -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Track your orders"
+        android:textSize="20dp"
+        android:background="@drawable/button_bg"
+
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Back to Home Button -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BACK TO HOME"
+        android:textSize="20dp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@color/black"
+        android:background="@drawable/bg_outline_button"/>
+
+</LinearLayout>

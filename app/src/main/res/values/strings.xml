@@ -4,4 +4,5 @@
     <string name="Intro_text2">Browse  the latest styles from top brands \nGet personalized recommendations \nEnjoy fast, free shipping</string>
     <string name="Intro_text3"><font color="#919191">Already have an account? </font><font color="#4CD964">SIGN IN</font></string>
     <string name="SignUp_text">Have an account Already?<font color="#4CD964"> LOG IN</font></string>
+    <string name="title_activity_detail">DetailActivity</string>
 </resources>

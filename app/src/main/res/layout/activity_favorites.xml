@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Thanh công cụ ở trên cùng -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <!-- Nút tìm kiếm -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search_icon"
+            android:contentDescription="Search Icon" />
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Favorites"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <!-- Nút giỏ hàng -->
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/btn_2"
+            android:background="@color/grey"
+            android:contentDescription="Cart Icon" />
+    </LinearLayout>
+
+    <!-- Danh sách các mục yêu thích -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favoritesList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <!-- Nút 'Add all to my cart' ở cuối -->
+    <Button
+        android:id="@+id/addAllToCartBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#7DA1C4"
+        android:text="Add all to my cart"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="16dp" />
+</LinearLayout>

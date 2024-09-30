@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/checkout_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check out"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:paddingVertical="16dp"/>
+
+    <!-- Shipping Address Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:id="@+id/shipping_address_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shipping Address"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            android:background="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/border_background"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/shipping_address_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Le Van Liem"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/shipping_address_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25 rue Robert Latouche, Nice, 06200, Côte D'azur, France"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Payment Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:id="@+id/payment_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            android:background="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/master_card"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/payment_card_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="**** **** **** 3947"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Delivery Method Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:id="@+id/delivery_method_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery method"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            android:background="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:src="@drawable/dhl"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/delivery_method_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Fast (2-3days)"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Order Summary Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="16dp">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/order_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order:  "
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  $95.00"
+            android:textSize="16sp"
+            android:layout_marginRight="5dp"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="16dp">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/delivery_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery: "
+            android:textSize="16sp" />
+            <TextView
+
+                android:id="@+id/delivery_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$5.00"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="16dp">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/total_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp" />
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$100.00"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingTop="8dp" />
+    </LinearLayout>
+</LinearLayout>
+
+    <!-- Submit Order Button -->
+    <Button
+        android:id="@+id/submit_order_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT ORDER"
+        android:backgroundTint="#5E92F3"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:paddingVertical="12dp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
