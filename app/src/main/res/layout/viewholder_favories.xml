@@ -7,6 +7,73 @@
     android:gravity="center_vertical">
 
     <!-- Hình ảnh sản phẩm -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <!-- Hình ảnh sản phẩm -->
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cat_2" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dog"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/productPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$20.00"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/removeItem"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="18dp"
+                android:contentDescription="Remove Icon"
+                android:src="@drawable/delete_fv" />
+
+            <ImageView
+                android:id="@+id/addToCart"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/grey"
+                android:contentDescription="Add to Cart Icon"
+                android:src="@drawable/btn_2" />
+        </LinearLayout>
+    </LinearLayout>
+
     <ImageView
         android:id="@+id/productImage"
         android:layout_width="90dp"
