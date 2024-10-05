@@ -13,6 +13,22 @@
         android:theme="@style/Theme.PetMarket"
         tools:targetApi="31">
         <activity
+            android:name=".Activity.Payment_Method_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Payment_Method_Activity"
+            android:exported="false"
+            android:theme="@style/Theme.PetMarket" />
+        <activity
+            android:name=".Activity.TTGiaoHangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MyOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.FavoritesActivity"
             android:exported="false" />
         <activity
